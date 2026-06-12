@@ -1,12 +1,12 @@
-Editor Option: VIM
+Editor Option: VisualStudioCode
 Custom Editor Path: 
 Default Branch Option:  
 Path Option: Cmd
 SSH Option: OpenSSH
 Tortoise Option: false
-CURL Option: WinSSL
+CURL Option: OpenSSL
 CRLF Option: CRLFAlways
-Bash Terminal Option: ConHost
+Bash Terminal Option: MinTTY
 Git Pull Behavior Option: Merge
 Use Credential Manager: Enabled
 Performance Tweaks FSCache: Enabled
