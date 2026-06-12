@@ -324,3 +324,4 @@ elif menu == "Risk Analytics":
 
         st.dataframe(df)
 
+#streamlit run .\HeartGuard_AI.py
