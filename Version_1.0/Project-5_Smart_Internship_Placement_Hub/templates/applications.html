@@ -1,0 +1,52 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Applications</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<nav>
+    <h2>My Applications</h2>
+
+    <ul>
+        <li><a href="/dashboard/">Dashboard</a></li>
+        <li><a href="/logout/">Logout</a></li>
+    </ul>
+</nav>
+
+<h1 style="text-align:center;margin-top:30px;">
+    Application Status
+</h1>
+
+{% for app in applications %}
+
+<div class="application-card">
+
+    <h2>{{ app.internship.role }}</h2>
+
+    <p>
+        <strong>Status:</strong>
+        {{ app.status }}
+    </p>
+
+    <p>
+        <strong>Feedback:</strong>
+        {{ app.feedback }}
+    </p>
+
+</div>
+
+{% empty %}
+
+<h3 style="text-align:center;">
+    No Applications Yet
+</h3>
+
+{% endfor %}
+
+</body>
+</html>

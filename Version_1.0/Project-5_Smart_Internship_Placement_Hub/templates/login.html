@@ -1,0 +1,48 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Student Login</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<nav>
+    <h2>Smart Internship Hub</h2>
+
+    <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="/register/">Register</a></li>
+    </ul>
+</nav>
+
+<form method="POST">
+    {% csrf_token %}
+
+    <h1 style="text-align:center;">Student Login</h1>
+
+    <input type="email" name="email" placeholder="Enter Email" required>
+
+    <input type="password" name="password" placeholder="Enter Password" required>
+
+    <button type="submit">Login</button>
+
+    <br><br>
+
+    <p style="text-align:center;">
+        Not Registered Yet?
+        <a href="/register/">Register Now</a>
+    </p>
+
+    {% if error %}
+        <p style="color:red;text-align:center;">
+            {{ error }}
+        </p>
+    {% endif %}
+
+</form>
+
+</body>
+</html>

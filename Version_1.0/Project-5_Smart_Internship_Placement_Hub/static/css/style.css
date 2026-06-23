@@ -1,0 +1,257 @@
+
+body{
+margin:0;
+padding:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f7fa;
+}
+
+/* Navbar */
+
+nav{
+background:#0f172a;
+color:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:20px 50px;
+}
+
+nav h2{
+margin:0;
+}
+
+nav ul{
+list-style:none;
+display:flex;
+gap:25px;
+}
+
+nav ul li{
+display:inline;
+}
+
+nav ul li a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+nav ul li a:hover{
+    color:#60a5fa;
+}
+
+/* Hero Section */
+
+
+.hero{
+    background:url("../images/hero_img.png");
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+
+    height:600px;
+
+    display:flex;
+    align-items:center;
+    justify-content:flex-start;
+}
+
+.hero-content{
+    background:rgba(255,255,255,0.85);
+
+    padding:30px;
+
+    width:500px;
+
+    margin-left:50px;
+
+    border-radius:15px;
+}
+
+.hero-content h1{
+    font-size:55px;
+    color:#0f172a;
+
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:20px;
+    line-height:1.6;
+}
+
+.hero-content button{
+    margin-top:20px;
+
+    padding:15px 30px;
+
+    background:#2563eb;
+
+    color:white;
+
+    border:none;
+
+    border-radius:10px;
+
+    cursor:pointer;
+}
+
+/* Statistics */
+
+.stats{
+display:flex;
+justify-content:center;
+gap:30px;
+flex-wrap:wrap;
+padding:60px;
+}
+
+.stat-card{
+background:white;
+width:250px;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0px 5px 20px black;
+}
+
+.stat-card h2{
+color:#2563eb;
+}
+
+/* Dashboard Cards */
+
+.dashboard-cards{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+margin-top:50px;
+}
+
+.box{
+background:white;
+width:250px;
+padding:30px;
+border-radius:15px;
+text-align:center;
+box-shadow:0px 5px 20px black;
+}
+
+.box h2{
+color:#2563eb;
+}
+
+/* Internship Cards */
+
+.card-container{
+display:flex;
+justify-content:center;
+gap:25px;
+flex-wrap:wrap;
+padding:50px;
+}
+
+.card{
+background:white;
+width:300px;
+padding:25px;
+border-radius:15px;
+box-shadow:0px 5px 20px black;
+transition:0.3s;
+}
+
+
+.card h3{
+color:#2563eb;
+}
+
+.card a{
+    display:inline-block;
+    margin-top:15px;
+
+    background:#2563eb;
+    color:white;
+
+    text-decoration:none;
+
+    padding:12px 20px;
+
+    border-radius:8px;
+}
+
+.card a:hover{
+    background:#1d4ed8;
+}
+
+/* Application Cards */
+
+.application-card{
+background:white;
+width:700px;
+margin:20px auto;
+padding:25px;
+border-radius:15px;
+box-shadow:0px 5px 20px black;
+}
+
+/* Forms */
+
+form{
+width:500px;
+margin:50px auto;
+background:rgb(250, 249, 249);
+padding:40px;
+border-radius:15px;
+box-shadow:0px 5px 20px black;
+}
+
+input{
+width:100%;
+padding:12px;
+margin-bottom:15px;
+border:1px solid #ddd;
+border-radius:8px;
+}
+
+button{
+background:#2563eb;
+color:white;
+border:none;
+padding:12px 25px;
+border-radius:8px;
+cursor:pointer;
+}
+
+button:hover{
+    background:#1d4ed8;
+}
+
+/* Footer */
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:40px;
+margin-top:50px;
+}
+
+.application-card{
+    background:white;
+
+    width:700px;
+
+    margin:25px auto;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    box-shadow:0px 5px 20px rgba(0,0,0,0.15);
+}
+
+.application-card h2{
+    color:#2563eb;
+}

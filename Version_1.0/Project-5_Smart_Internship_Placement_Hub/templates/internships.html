@@ -1,0 +1,42 @@
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/style.css' %}">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internships</title>
+</head>
+<body>
+
+<h1>Available Internships</h1>
+
+{% for internship in internships %}
+
+<div style="border:1px solid black;padding:15px;margin:15px;">
+
+    <h3>{{ internship.role }}</h3>
+
+    <p>
+        Company :
+        {{ internship.company_name }}
+    </p>
+
+    <p>
+        Duration :
+        {{ internship.duration }}
+    </p>
+
+    <p>
+        Skills :
+        {{ internship.skills }}
+    </p>
+
+    <a href="/apply/{{ internship.id }}/">
+    Apply Internship
+    </a>
+
+</div>
+
+{% endfor %}
+
+</body>
+</html>

@@ -1,0 +1,59 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+</head>
+<body>
+
+<nav>
+    <h2>Welcome {{ name }}</h2>
+
+    <ul>
+        <li><a href="/applications/">My Applications</a></li>
+        <li><a href="/logout/">Logout</a></li>
+    </ul>
+</nav>
+
+<h1 style="text-align:center;margin-top:30px;">
+    Available Internships
+</h1>
+
+<div class="card-container">
+
+{% for internship in internships %}
+
+<div class="card">
+
+    <h3>{{ internship.role }}</h3>
+
+    <p>
+        <strong>Company:</strong>
+        {{ internship.company }}
+    </p>
+
+    <p>
+        <strong>Duration:</strong>
+        {{ internship.duration }}
+    </p>
+
+    <p>
+        <strong>Skills:</strong>
+        {{ internship.skills }}
+    </p>
+
+    <a href="/apply/{{ internship.id }}/">
+        Apply Internship
+    </a>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</body>
+</html>
